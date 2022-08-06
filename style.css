@@ -11,6 +11,7 @@ body {
     background-color: whitesmoke;
 }
 
+/* Loader */
 #loader {
     display: flex;
     flex-direction: column-reverse;
@@ -38,7 +39,6 @@ body {
 }
 
 /* Header */
-
 #header h1 {
     margin-top: 10px;
     font-family: 'Merriweather Sans', sans-serif;
@@ -49,11 +49,9 @@ body {
 }
 
 /* Content */
-
 #content {
     margin: 0px 30%;    
 }
-
 #content img {
     width: 100%;
     max-height: 100vh;
