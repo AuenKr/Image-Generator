@@ -21,15 +21,12 @@ async function GetPhotes() {
     try {
         let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${acesskey}&count=${count}`;
         imageloaded = 0;
+        count = 15;
 
         let response = await fetch(apiUrl);
         photoArray = await response.json();
-
-        loader_img.hidden = true;
-        loader_text.hidden = true;
-        header.hidden = false;
-
         DisplayPhotoes();
+        
     } catch (error) {
         // enter error message
         console.log(photoArray)
@@ -65,6 +62,10 @@ function DisplayPhotoes() {
         Image_Container.appendChild(item);
         item.appendChild(img);
     });
+
+    loader_img.hidden = true;
+    loader_text.hidden = true;
+    header.hidden = false;
 }
 
 // Adding Scroll feature
