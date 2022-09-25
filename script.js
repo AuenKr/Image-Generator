@@ -74,8 +74,8 @@ function OnScroll() {
         newload = true;
     }
     if (window.innerHeight + window.scrollY > document.body.offsetHeight - 1000 && newload) {
-        GetPhotes();
         newload = false;
+        GetPhotes();
     }
 }
 
